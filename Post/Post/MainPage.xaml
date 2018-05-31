@@ -4,8 +4,18 @@
              xmlns:local="clr-namespace:Post"
              x:Class="Post.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
-
+    <StackLayout>
+        <Label Text="{Binding Marca}" 
+                       FontSize="Large" 
+                       FontAttributes="Bold" 
+                       VerticalOptions="Start"  
+                       HorizontalOptions="CenterAndExpand" />
+        <Image Source="{Binding Imagen}"  
+                           WidthRequest="200" HeightRequest="200"/>
+        <Label Text="{Binding Descripcion}" 
+                       FontAttributes="Bold" 
+                       VerticalOptions="Start"  
+                       HorizontalOptions="StartAndExpand" />
+    </StackLayout>
+   
 </ContentPage>

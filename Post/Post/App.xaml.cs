@@ -13,7 +13,7 @@ namespace Post
 		{
 			InitializeComponent();
 
-			MainPage = new Post.MainPage();
+			MainPage = new Post.Views.PaginaVista();
 		}
 
 		protected override void OnStart ()

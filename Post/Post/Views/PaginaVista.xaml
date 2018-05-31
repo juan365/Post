@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Post.Views.PaginaVista">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+           
+            <Label Text="{Binding Marca}" 
+                       FontSize="50" TextColor="Red" 
+                       FontAttributes="Bold" 
+                       VerticalOptions="Start"  
+                       HorizontalOptions="CenterAndExpand" />
+                <Image Source="{Binding ILogo}"  
+                           WidthRequest="200" HeightRequest="200"/>
+                <Label Text="{Binding Descripcion}" 
+                       FontAttributes="Bold" 
+                       VerticalOptions="Start"  
+                       HorizontalOptions="CenterAndExpand" />
+            <Label TextColor="Red" FontSize="25" Text="A continuacion podemos ver algunos de sus modelos" 
+                       FontAttributes="Bold" 
+                       VerticalOptions="CenterAndExpand"  
+                       HorizontalOptions="CenterAndExpand" />
+
+            <Image Source="{Binding IColeccion1}"  
+                           WidthRequest="200" HeightRequest="200"/>
+                <Label TextColor="Red" FontSize="25" Text="Como podemos ver Ferrari también sabe pintar en amarillo..." 
+                       FontAttributes="Bold" 
+                       VerticalOptions="CenterAndExpand"  
+                       HorizontalOptions="CenterAndExpand" />
+                <Image Source="{Binding IColeccion2}"  
+                           WidthRequest="200" HeightRequest="200"/>
+                <Label TextColor="Red" FontSize="25" Text="No obstante su color mas popular es el rojo" 
+                       FontAttributes="Bold" 
+                       VerticalOptions="CenterAndExpand"  
+                       HorizontalOptions="CenterAndExpand" />
+                <Image Source="{Binding IColeccion3}"  
+                           WidthRequest="200" HeightRequest="200"/>
+                <Image Source="{Binding IColeccion4}"  
+                           WidthRequest="200" HeightRequest="200"/>
+                <Image Source="{Binding IColeccion5}"  
+                           WidthRequest="200" HeightRequest="200"/>
+
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>
